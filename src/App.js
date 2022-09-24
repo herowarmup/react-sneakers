@@ -144,7 +144,7 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/"
+            path={process.env.PUBLIC_URL + "/"}
             element={
               <Home
                 items={items}
@@ -158,8 +158,16 @@ function App() {
               />
             }
           />
-          <Route exact path="/favorites" element={<Favorites />} />
-          <Route exact path="/Orders" element={<Orders />} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/"}
+            element={<Favorites />}
+          />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/"}
+            element={<Orders />}
+          />
         </Routes>
       </div>
     </AppContext.Provider>

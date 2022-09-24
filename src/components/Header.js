@@ -29,7 +29,7 @@ function Header(props) {
                 className="mr-20 cu-p"
                 width={18}
                 height={18}
-                src="/img/heart.svg"
+                src="img/heart.svg"
                 alt="Избранное"
               />
             </Link>
